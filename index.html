@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>CryptoBox</title>
+</head>
+<body>
+    <header>
+        <h1>CryptoBox</h1>
+    </header>
+    <main class="mainpage">
+        <section class="mainpage__input">
+            <textarea class="mainpage__input__textfield" onclick="apagaTexto()">Digite seu Texto</textarea>
+            </input>
+            <p class="mainpage__input__textfield__alert"> <span class="mainpage__input__alert__exclamation">!</span> Apenas Letras minúsculas e sem acento</p>
+            <div class="mainpage__input__buttons">
+                <a href="#" class="mainpage__input__buttons__codifica" onclick="functionCodificar()">Criptografar</a>
+                <a href="#" class="mainpage__input__buttons__decodifica" onclick="functionDecodificar()">Descriptografar</a>
+            </div>
+        </section>
+        <section class="mainpage__output">
+            <output class="mainpage__output__textfield" >
+                <div class="mainpage__output__textfield__uppergroup">
+                    <img class="mainpage__output__textfield__image" src="/img/High quality products 1 1.svg" alt="desenho segurando uma lupa">
+                    <p class="mainpage__output__textfield__texts"><strong class="mainpage__output__textfield__texts__strong">Nenhuma Mensagem Encontrada</strong></p>
+                    <p class="mainpage__output__textfield__texts">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <a class="mainpage__output__buttons__copiar" href="#">Copiar</a>
+            </output>
+            <!-- <div class="mainpage__output__buttons">
+                <form class="mainpage__output__buttons__modes">
+                    <input type="radio" id="Enigma Mode" name="fav_language" value="Enigma Mode">
+                    <label for="html">Enigma Mode</label><br>
+                    <input type="radio" id="RSA 2048" name="fav_language" value="Enigma Mode">
+                    <label for="html">RSA 2048</label><br>
+                    <input type="radio" id="Quantum Criptography (Soon)" name="fav_language" value="Quantum Criptography (Soon)">
+                    <label for="html">Quantum Criptography (Soon)</label><br>
+                </form>
+            </div> -->
+        </section>
+    </main>
+    <footer class="rodape">Desenvolvido por Wesley Silva (linkedin: /in/wesleyfrancisco )</footer>
+    <!-- <script src="decoder.js" defer></script> -->
+</body>
+</html>
