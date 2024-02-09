@@ -4,19 +4,20 @@
 *{
     margin: 0;
     padding: 0;
-    border-radius: 10px;
 
 }
 
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content:center; */
+    /* align-items: center; */
     background-color: #D8DFE8;
     color: white;
     box-sizing: border-box;
+    height: 100vh;
+    /* box-sizing: border-box; */
 
 }
 
@@ -32,11 +33,12 @@ h1{
 }
 .mainpage{
     display: flex;
-    flex-direction: row;
-    justify-content:center;
-    box-sizing: border-box;
-    width: 90vw;
-    height: 75vh;
+    /* justify-content:; */
+    margin: 0% 10% 10% 10%;
+    /* box-sizing: border-box; */
+    justify-content: flex-end;
+    /* width: 90vw; */
+    /* height: 75vh; */
 
 }
 
@@ -44,8 +46,8 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 75%;
-    height: 100%;
+    width: 60%;
+    height: 80vh;
 }
 
 .mainpage__input__textfield{
@@ -82,7 +84,7 @@ h1{
     flex-direction: row;
     gap: 10%;
     text-align: center;
-    margin: 1rem;
+    margin: 1.5rem;
     font-family: 'Inter', sans-serif;
 
 }
@@ -99,6 +101,10 @@ h1{
 
 }
 
+.mainpage__input__buttons__codifica:hover{
+    background-color: rgb(7, 7, 214);
+}
+
 .mainpage__input__buttons__decodifica{
     background-color: #D8DFE8;
     width: 17.375rem;
@@ -107,55 +113,60 @@ h1{
     font-size: 16px;
     border-radius: 24px;
     border: 2px solid;
+    border-color: darkblue;
     text-decoration: none;
+}
 
-
-
+.mainpage__input__buttons__decodifica:hover{
+    background-color: #7f858b;
+    color: white;
 }
 
 .mainpage__output{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 25%;
+    width: 30%;
+    height: 80vh;
 
 
 }
 
 .mainpage__output__textfield{
     display: flex;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     flex-direction: column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-end;
     /* align-content: space-between; */
-    row-gap: 20%;
+    row-gap: 39%;
     background-color: white;
     width: 90%;
     height: 100%;
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2em;
 }
 
 .mainpage__output__textfield__uppergroup{
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    /* gap: 10%; */
     align-content: space-between;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
 }
 
 .mainpage__output__textfield__image{
-    margin-top: 10%;
-    align-self: center;
-    width: 80%;
+    /* align-self: center; */
+    width: 50%;
+    height: 50%;
 }
 
 .mainpage__output__textfield__texts{
     color: black;
     text-align: center;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
 
@@ -169,7 +180,7 @@ h1{
 
 .mainpage__output__buttons__copiar{
     display: flex;
-    margin: 0%;
+    margin: 1.5rem;
     padding: 1rem;
     justify-content: center;
     background-color: white;
@@ -179,8 +190,11 @@ h1{
     border-color: darkblue;
     font-family: 'Inter', sans-serif;
     width: 80%;
+}
 
-
+.mainpage__output__buttons__copiar:hover{
+    background-color: #7f858b;
+    color: white;
 }
 
 .mainpage__output__buttons__modes{
@@ -192,7 +206,7 @@ h1{
 
 .rodape{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-top: 4rem;
     width: 100vw;
     padding: 1.5rem;
@@ -215,7 +229,6 @@ h1{
 
     .mainpage__input{
         width: 100vw;
-        height: 70vh;
     }
 
     .mainpage__input__buttons{
@@ -251,15 +264,35 @@ h1{
     }
 }
 
-@media (max-height: 1018px){
+@media (max-height: 1110px){
     .mainpage__output__textfield{
-    position: inherit;    
+        row-gap: 25%;
     }
 }
 
-
-@media (max-height: 710px){
+@media (max-height: 933px){
     .mainpage__output__textfield{
-        gap: 0%;
+        row-gap: 15%;
+    }   
+}
+
+@media (max-height: 791px){
+    .mainpage__output__textfield{
+        row-gap: 5%;
     }
 }
+
+@media (max-height: 731px){
+    .mainpage__output__textfield{
+        row-gap: 0%;
+    }
+
+
+}
+
+@media (max-height: 693px){
+    .mainpage__output__textfield__image{
+        display: none;
+    }
+}
+
