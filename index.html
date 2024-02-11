@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="decoder.js" defer></script>
     
     <title>CryptoBox</title>
 </head>
@@ -13,22 +14,22 @@
     </header>
     <main class="mainpage">
         <section class="mainpage__input">
-            <textarea class="mainpage__input__textfield" onclick="apagaTexto()">Digite seu Texto</textarea>
-            </input>
+            <textarea class="mainpage__input__textfield" onclick="apagaTexto()">Digite seu Texto...</textarea>
+            
             <p class="mainpage__input__textfield__alert"> <span class="mainpage__input__alert__exclamation">!</span> Apenas Letras minúsculas e sem acento</p>
             <div class="mainpage__input__buttons">
-                <a href="#" class="mainpage__input__buttons__codifica" onclick="functionCodificar()">Criptografar</a>
-                <a href="#" class="mainpage__input__buttons__decodifica" onclick="functionDecodificar()">Descriptografar</a>
+                <a href="#" class="mainpage__input__buttons__codifica" onclick="Codificar()">Criptografar</a>
+                <a href="#" class="mainpage__input__buttons__decodifica" onclick="Decodificar()">Descriptografar</a>
             </div>
         </section>
         <section class="mainpage__output">
             <output class="mainpage__output__textfield" >
                 <div class="mainpage__output__textfield__uppergroup">
                     <img class="mainpage__output__textfield__image" src="/img/High quality products 1 1.svg" alt="desenho segurando uma lupa">
-                    <p class="mainpage__output__textfield__texts"><strong class="mainpage__output__textfield__texts__strong">Nenhuma Mensagem Encontrada</strong></p>
-                    <p class="mainpage__output__textfield__texts">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <p class="mainpage__output__textfield__texts" id="output"><strong class="mainpage__output__textfield__texts__strong">Nenhuma Mensagem Encontrada</strong></p>
+                    <p class="mainpage__output__textfield__texts" id="remove_element">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-                <a class="mainpage__output__buttons__copiar" href="#">Copiar</a>
+                <a class="mainpage__output__buttons__copiar" onclick="copiarTexto()" href="#">Copiar</a>
             </output>
             <!-- <div class="mainpage__output__buttons">
                 <form class="mainpage__output__buttons__modes">
