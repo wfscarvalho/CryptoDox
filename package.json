@@ -1,0 +1,10 @@
+{
+  "name": "enigma-chat-simulator",
+  "version": "1.0.0",
+  "description": "Virtual Enigma machine chat simulator.",
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "author": "Wesley Silva",
+  "license": "MIT"
+}
