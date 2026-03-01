@@ -151,43 +151,15 @@ h1{
 .mainpage__output__textfield__uppergroup{
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    align-items: stretch;
-    justify-content: flex-start;
+    /* gap: 10%; */
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
     flex: 1 1 auto;
     overflow:scroll;
     margin: 1rem;
     overflow-y: auto;
     flex-shrink: 2;
-    padding: 10px;
-    width: 90%;
-}
-
-.chat-bubble {
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    max-width: 80%;
-    word-wrap: break-word;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    line-height: 1.4;
-    position: relative;
-    clear: both;
-}
-
-.user-bubble {
-    background-color: darkblue;
-    color: white;
-    align-self: flex-end;
-    border-bottom-right-radius: 0;
-}
-
-.enigma-bubble {
-    background-color: #e0e0e0;
-    color: black;
-    align-self: flex-start;
-    border-bottom-left-radius: 0;
 }
 
 .mainpage__output__textfield__image{
